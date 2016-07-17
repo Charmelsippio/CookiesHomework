@@ -4,7 +4,7 @@
 
 // STEP 1: You have to name global variables so that you can access them across all of the functions. 
 
-// NOTE: I also coded the "get" here to practice DRY. Otherwiser you all just plainly identifying var c_name; then your are doing the cookies.get as Cookies.get('buyer_name'), which it is easier to just combine them.
+// NOTE: I also coded the "get" here to practice DRY. Otherwiser you all just plainly identifying var c_name; then your are doing the cookies.get as Cookies.get('buyer_name').value, which it is easier to just combine them.
 
 var c_name = Cookies.get('buyer_name');
 var c_chocolate = Cookies.get('chocolate'); //buyer_name, chocolate, etc. are all pointing to the id name given in the input tag. This is the "key" in the key/value pair. The "value" is what is actually being entered into the input field, i.e. person's name or the number of cookies they want. 
