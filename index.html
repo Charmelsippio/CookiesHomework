@@ -13,13 +13,13 @@
 <form action="index.html">
   <h2>CookieHub Order Form</h2>
   <label for="name">Your Name</label>
-  <input type="text" id="buyer_name">
+  <input type="text" id="buyer_name"> <!-- this id tag is being called in the variable. "buyer_name is the key; the actual input name will be the "value." -->
   <br>
   <br>
   <br>
   <label for="name">Chocolate Chip</label>
   <input type="number" id="chocolate" min="0" max="10"> 
-    <p id="chip"></p>
+    <p id="chip"></p> <!-- NOTE: I have a "<p>" here to show my input order count once submitted. I did this to fulfill the requirement to show that when the "Start Over?" button is clicked, the count for the cookies deletes, BUT the person's name doesn't, thus remembering the info for them if they return. -->
   <br>
   <br>
   <label for="name">Sugar</label>
@@ -32,18 +32,19 @@
     <p id="LEMON"></p>
   <br>
   <br>
+  <!-- this is where your set cookies function being called once you submit an order -->
   <input type="submit" value="Order!" onclick="cookies()">
   <input type="submit" value="Start Over?" onclick="deleteCookie()">
 </form>
 </div>
 
-<div class="order_confirm">
+<!-- <div class="order_confirm">
   <h2>Your Order</h2>
   <p id="chip"></p>
   <p id="SUGAR"></p>
   <p id="LEMON"></p>
 </div>
-
+ -->
 
 
 <script type="text/javascript" src="main.js"></script>
