@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="cookies.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>CookieHub</title>
+</head>
+<body>
+
+<h1>Welcome to CookieHub!</h1>
+
+<div class="order_form">
+<form action="index.html">
+  <h2>CookieHub Order Form</h2>
+  <label for="name">Your Name</label>
+  <input type="text" id="buyer_name">
+  <br>
+  <br>
+  <br>
+  <label for="name">Chocolate Chip</label>
+  <input type="number" id="chocolate" min="0" max="10"> 
+    <p id="chip"></p>
+  <br>
+  <br>
+  <label for="name">Sugar</label>
+  <input type="number" id="sugar" min="0" max="10"> 
+    <p id="SUGAR"></p>
+  <br>
+  <br>
+  <label for="name">Lemon</label>
+  <input type="number" id="lemon" min="0" max="10"> 
+    <p id="LEMON"></p>
+  <br>
+  <br>
+  <input type="submit" value="Order!" onclick="cookies()">
+  <input type="submit" value="Start Over?" onclick="deleteCookie()">
+</form>
+</div>
+
+<div class="order_confirm">
+  <h2>Your Order</h2>
+  <p id="chip"></p>
+  <p id="SUGAR"></p>
+  <p id="LEMON"></p>
+</div>
+
+
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
